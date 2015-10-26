@@ -936,11 +936,12 @@
             dim = 
             {
                 width:newItem.width()*scale,
+                height:newItem.height()*scale,
                 x:($window.width() - newItem.width()*scale)/2,
                 y:($window.height() - newItem.height()*scale)/2
             };
 
-            imgWrapCss = {width:dim.width};
+            imgWrapCss = {width:dim.width,height:dim.height};
             if(Modernizr.csstransforms3d)
                 imgWrapCss[vendorPrefix+"transform"] = "translate3d("+dim.x+"px,"+dim.y+"px,0) scale(1)";
             else
@@ -948,20 +949,17 @@
 
             this.$imgWrap.removeClass("chrg-animation");
             self.curItem.css("visibility","visible");
+            self.$imgWrap.css(imgWrapCss);
+            self.$imgWrap.html("");
+            self.$imgWrap.append(imgClone);
+            self.$bg.css({"background-color":rgbColor});
+            self.curItem = newItem;
+            self.curItem.css("visibility","hidden");
+            self.loadImg(imgClone);
             setTimeout(function()
             {
-                self.$imgWrap.css(imgWrapCss);
-                self.$imgWrap.html("");
-                self.$imgWrap.append(imgClone);
-                self.$bg.css({"background-color":rgbColor});
-                self.curItem = newItem;
-                self.curItem.css("visibility","hidden");
-                self.loadImg(imgClone);
-                setTimeout(function()
-                {
-                    self.$imgWrap.addClass("chrg-animation");
-                    self.lock = false;
-                },50);
+                self.$imgWrap.addClass("chrg-animation");
+                self.lock = false;
             },50);
         },
     });
