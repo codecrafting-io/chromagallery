@@ -133,17 +133,17 @@ Chroma Gallery requires Jquery 1.4.3+
 
 You can use the following options
 
-Name | Description
+Name | Default Value | Description
 ------------ | -------------
-color | Set the color of the background. If the value is "chroma" will be the predominant color of the image
-maxColumns | The max number of the columns on the grid. If the number is not possible the value will be override
-items | A array that contains the img items to be loaded
-dof | Ads a Depth of Field effect to the background. Can hit performance
-screenOpacity | The screen opacity between 0 and 1
-lazyLoad | Add or not the lazy load effect on the grid
-gridMargin | Set the grid margin between the images
-fullscreen | Add or not the fullscreen mode
-easing | Set the easing mode for the open and close animations. Check below all values possible
+color | chroma | Set the color of the background. If the value is "chroma" will be the predominant color of the image
+maxColumns | 4 | The max number of the columns on the grid. If the number is not possible the value will be override
+items | null | A array that contains the img items to be loaded
+dof | false | Ads a Depth of Field effect to the background. Can hit performance
+screenOpacity | 0.98 | The screen opacity between 0 and 1
+lazyLoad | true | Add or not the lazy load effect on the grid
+gridMargin | 7 | Set the grid margin between the images
+fullscreen | false | Add or not the fullscreen mode
+easing | easeInOutQuart | Set the easing mode for the open and close animations. Check below all values possible
 
 Easing options:
 
