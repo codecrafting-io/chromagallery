@@ -134,7 +134,7 @@ Chroma Gallery requires Jquery 1.4.3+
 You can use the following options
 
 Name | Default Value | Description
------------- | -------------
+------------ | ------------- | -------------
 color | chroma | Set the color of the background. If the value is "chroma" will be the predominant color of the image
 maxColumns | 4 | The max number of the columns on the grid. If the number is not possible the value will be override
 items | null | A array that contains the img items to be loaded
