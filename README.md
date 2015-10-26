@@ -13,6 +13,8 @@ Licence: under the MIT license: http://www.opensource.org/licenses/mit-license.p
 - [Methods](#methods)
 - [Callbacks](#callbacks)
 
+[DEMO](http://casulworks.com/chromagallery/)
+
 ## Dependencies
 
 Chroma Gallery has 3 dependencies:
