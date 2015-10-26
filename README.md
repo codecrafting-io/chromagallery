@@ -44,7 +44,7 @@ Add the css file to your html.
 Note that css uses a font icon, make sure your directory structure is aligned with the css.
 
 The HTML markup is really minimal. Create a div element that will surround all gallery grid and add img tags as
-you wanted
+you want
 
     <div class="chroma-gallery mygallery">
         <img src="images/thumbs/1.jpg" alt="Pic 1" data-largesrc="images/1.jpg">
