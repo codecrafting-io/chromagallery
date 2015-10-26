@@ -806,7 +806,7 @@
                         self.loadImg(imgClone);
                     },animationTime+50);
                 },80);
-                }
+            }
         },
 
         //Close any opened img
@@ -899,7 +899,7 @@
         {
             var self = this,
                 imgClone = newItem.find("img").clone(),
-                rgbColor = this.getRGBColor(imgClone),
+                rgbColor = this.getRGBColor(newItem.find("img")),
                 maxSize = {width:$window.width()*0.92,height:$window.height()*0.92},
                 scale,dim,imgWrapCss;
 
