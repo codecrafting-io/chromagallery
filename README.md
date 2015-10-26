@@ -7,8 +7,11 @@ in addition to using the predominant color to highlight the visual.
 Licence: under the MIT license: http://www.opensource.org/licenses/mit-license.php
 
 - [Dependencies](#dependencies)
-- [How to use](#how to use)
+- [How to use](#how-to-use)
 - [Requirements](#requirements)
+- [Options](#options)
+- [Methods](#methods)
+- [Callbacks](#callbacks)
 
 ## Dependencies
 
@@ -144,35 +147,35 @@ easing | Set the easing mode for the open and close animations. Check below all 
 
 Easing options:
 
-*linear
-*ease
-*easeIn
-*easeOut
-*easeInOut
-*easeInQuad
-*easeInCubic
-*easeInQuart
-*easeInQuint
-*easeInSine
-*easeInExpo
-*easeInCirc
-*easeInBack
-*easeOutQuad
-*easeOutCubic
-*easeOutQuart
-*easeOutQuint
-*easeOutSine
-*easeOutExpo
-*easeOutCirc
-*easeOutBack
-*easeInOutQuad
-*easeInOutCubic
-*easeInOutQuart
-*easeInOutQuint
-*easeInOutSine
-*easeInOutExpo
-*easeInOutCirc
-*easeInOutBack
+*   linear
+*   ease
+*   easeIn
+*   easeOut
+*   easeInOut
+*   easeInQuad
+*   easeInCubic
+*   easeInQuart
+*   easeInQuint
+*   easeInSine
+*   easeInExpo
+*   easeInCirc
+*   easeInBack
+*   easeOutQuad
+*   easeOutCubic
+*   easeOutQuart
+*   easeOutQuint
+*   easeOutSine
+*   easeOutExpo
+*   easeOutCirc
+*   easeOutBack
+*   easeInOutQuad
+*   easeInOutCubic
+*   easeInOutQuart
+*   easeInOutQuint
+*   easeInOutSine
+*   easeInOutExpo
+*   easeInOutCirc
+*   easeInOutBack
 
 ## Methods
 
