@@ -18,7 +18,7 @@ Licence: under the MIT license: http://www.opensource.org/licenses/mit-license.p
 Chroma Gallery has 3 dependencies:
 
 *   [Jquery](https://jquery.com)
-*   [Manrosry](http://masonry.desandro.com)
+*   [Masonry](http://masonry.desandro.com)
 *   [Images Loaded](http://imagesloaded.desandro.com)
 
 In addition to that the gallery also use a custom Modernizr
