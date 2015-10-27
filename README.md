@@ -13,7 +13,7 @@ Licence: under the MIT license: http://www.opensource.org/licenses/mit-license.p
 - [Methods](#methods)
 - [Callbacks](#callbacks)
 
-[demo](http://casulworks.com/chromagallery/dist)
+[demo](http://codecrafting.net/chromagallery/dist)
 
 ## Dependencies
 
