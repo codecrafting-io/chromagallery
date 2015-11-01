@@ -237,7 +237,7 @@ Check the following tips:
 *   Don't worry if a image is broken, the Chroma Gallery will handle it
 *   Pay attention to stylesheets and fonts folders. The css must correctly reference the chroma-ui font location.
 
-You should not consider to use the Chroma Gallery when:
+You should consider to not use the Chroma Gallery when:
 
 *   Don't want to enlarge your image. If you want a grid layout, use masonry alone.
 *   If you have large image description. Chroma Gallery limits the description in 144 characters.
