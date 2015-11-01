@@ -1,9 +1,8 @@
 /*
  * Jquery Chroma Gallery
  * author: casulworks
- * Licensed under the MIT license
+ * License: under the MIT license: http://www.opensource.org/licenses/mit-license.php
  * Credits for easing classes: http://matthewlein.com/ceaser/
- * Credits for jello animation: https://daneden.github.io/animate.css/;	
  */
 
 @font-face {
@@ -133,10 +132,11 @@
 	-moz-filter: blur(0px);
 	-o-filter: blur(0px);
 	filter: blur(0px);
-	-webkit-transition: -webkit-filter 0.5s ease-in-out;
-	-moz-transition: -moz-filter 0.5s ease-in-out;
-	-o-transition: -o-filter 0.5s ease-in-out;
-	transition: filter 0.5s ease-in-out;
+	-webkit-transition: -webkit-filter 1s ease-in-out;
+	-moz-transition: -moz-filter 1s ease-in-out;
+	-o-transition: -o-filter 1s ease-in-out;
+	transition: filter 1s ease-in-out, -webkit-filter 1s ease-in-out, -moz-filter 1s ease-in-out, -o-filter 1s ease-in-out;
+	will-change:-webkit-filter,-moz-filter,-o-filter,filter;
 }
 
 .chrg-dof-effect
@@ -193,12 +193,23 @@
 	will-change:opacity;
 	z-index: 2;
 }
+
+.chroma-screen .chrg-index
+{
+	float: left;
+	color: rgba(255,255,255,0.85);
+	text-shadow:0px 3px 4px rgba(0,0,0,0.4);
+	position: relative;
+	top: 8px;
+	left: 8px;
+	font-size: 15px;
+}
+
 .chroma-screen .chrg-ui button
 {
 	width: 38px;
 	height: 38px;
 	float:right;
-	position: relative;
 	-webkit-border-radius:100%;
 	-moz-border-radius:100%;
 	-ms-border-radius:100%; 
@@ -240,6 +251,9 @@
 	transform-origin: 0 0;
 	-webkit-backface-visibility:hidden;
 	backface-visibility: hidden;
+	-webkit-box-shadow:0px 0px 13px 0px rgba(0,0,0,0.4);
+	-moz-box-shadow:0px 0px 13px 0px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.4);
 	will-change:transform,-webkit-transform,-moz-transform,-ms-transform,-o-transform;
 	z-index: 1;
 }
@@ -250,9 +264,6 @@
 	width: 100%;
 	height: 100%;
 	display: block;
-	/*-webkit-box-shadow:0px 0px 13px 0px rgba(0,0,0,0.4);
-	-moz-box-shadow:0px 0px 13px 0px rgba(0,0,0,0.4);
-	box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.4);*/
 	top: 0;
 	left: 0;
 	-webkit-backface-visibility:hidden;
@@ -261,11 +272,11 @@
 
 .chrg-animation
 {
-	-webkit-transition: all .350s;
-	-moz-transition: all .350s;
-	-ms-transition: all .350s;
-	-o-transition: all .350s;
-	transition: all .350s;
+	-webkit-transition: -webkit-transform .350s;
+	-moz-transition: -moz-transform .350s;
+	-ms-transition: -ms-transform .350s;
+	-o-transition: -o-transform .350s;
+	transition: transform .350s;
 }
 
  /*=============================================

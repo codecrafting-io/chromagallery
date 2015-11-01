@@ -2,32 +2,49 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">	
-	<link rel="stylesheet" href="stylesheets/chromagallery.min.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="stylesheets/chromagallery.css">
 	<style type="text/css">
-		body,html
-		{
-			height: 100%;
-		}
+	
+		body,html{height: 100%;}
 		.content
 		{
 			width: 100%;
 			height: 100%;
 			margin: 10px auto;
 		}
-		@media screen and (min-width: 980px) /* Desktop */ {
-		  .content {
-		    width: 70%;
-		  }
-		}		
-		.mygallery
+
+		.chroma-gallery-logo
 		{
-			margin: 25px 0;
+			width: 300px;
+			height: 124px;
+			background: url(images/chromagallery_logo.png) no-repeat;
+			margin: 25px auto;
 		}
+
+		.mygallery{margin: 25px 0;}	
+
+		@media screen and (max-width: 400px) /* small logo */ 
+		{
+		  .chroma-gallery-logo
+		  {
+		  	width: 200px;
+		  	height: 83px;
+		  	background-size:200px 83px;
+		  }
+		}
+
+		@media screen and (min-width: 980px) /* Desktop */ 
+		{
+		  .content {width: 60%;}
+		}	
+
 	</style>
 	<title>Chroma Gallery</title>
 </head>
 <body>
+	
+	<div class="chroma-gallery-logo"></div>
 
 	<div class="content">
 		<div class="chroma-gallery mygallery">
@@ -52,6 +69,5 @@
 		    $(".mygallery").chromaGallery();
 		});
 	</script>
-
 </body>
 </html>

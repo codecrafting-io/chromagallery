@@ -12,26 +12,23 @@ Licence: under the MIT license: http://www.opensource.org/licenses/mit-license.p
 - [Options](#options)
 - [Methods](#methods)
 - [Callbacks](#callbacks)
+- [Tips and Tricks](#tips-and-tricks)
 
 [demo](http://codecrafting.net/chromagallery/dist)
 
 ## Dependencies
 
-Chroma Gallery has 3 dependencies:
+Chroma Gallery has 2 dependencies:
 
 *   [Jquery](https://jquery.com)
 *   [Masonry](http://masonry.desandro.com)
-*   [Images Loaded](http://imagesloaded.desandro.com)
-
-In addition to that the gallery also use a custom Modernizr
 
 ## How to use
 
 To get started, download the plugin (dist folder), unzip it and copy files to your website/application directory.
-Add the javascript files to your html.Make sure you also add the jQuery library.
-
+Add the javascript files to your html. Make sure you also add the jQuery library.
+    
     <script src="scripts/modernizr-chrg.min.js"></script>
-    <script src="scripts/imagesloaded.min.js"></script>
     <script src="scripts/masonry.min.js"></script>
     <script src="scripts/chromagallery.min.js"></script>
 
@@ -95,18 +92,22 @@ You can also load images from options like this:
             items:
             [
                 {
+                    src: 'images/thumbs/1.jpg',
                     alt:'Pic 1',
                     largesrc:'images/1.jpg'    
                 },
                 {
+                    src: 'images/thumbs/2.jpg',
                     alt:'Pic 2',
                     largesrc:'images/2.jpg'    
                 },
                 {
+                    src: 'images/thumbs/3.jpg',
                     alt:'Pic 3',
                     largesrc:'images/3.jpg'    
                 },
                 {
+                    src: 'images/thumbs/4.jpg',
                     alt:'Pic 4',
                     largesrc:'images/4.jpg'    
                 }
@@ -135,17 +136,17 @@ Chroma Gallery requires Jquery 1.4.3+
 
 You can use the following options
 
-Name | Default Value | Description
+Name | Type | Default Value | Description
 ------------ | ------------- | -------------
-color | chroma | Set the color of the background. If the value is "chroma" will be the predominant color of the image
-maxColumns | 4 | The max number of the columns on the grid. If the number is not possible the value will be override
-items | null | A array that contains the img items to be loaded
-dof | false | Ads a Depth of Field effect to the background. Can hit performance
-screenOpacity | 0.98 | The screen opacity between 0 and 1
-lazyLoad | true | Add or not the lazy load effect on the grid
-gridMargin | 7 | Set the grid margin between the images
-fullscreen | false | Add or not the fullscreen mode
-easing | easeInOutQuart | Set the easing mode for the open and close animations. Check below all values possible
+color | String | chroma | Set the color of the background. If the value is "chroma" will be the predominant color of the image
+maxColumns | Number |  4 | The max number of the columns on the grid. If the number is not possible the value will be override
+items | Array | null | A array that contains the img items to be loaded
+dof | boolean | false | Ads a Depth of Field effect to the background. Can hit performance
+screenOpacity | Number | 0.95 | The screen opacity between 0 and 1
+lazyLoad | boolean | true | Add or not the lazy load effect on the grid
+gridMargin | Number | 7 | Set the grid margin between the images
+fullscreen | boolean | false | Add or not the fullscreen mode
+easing | String | easeInOutQuart | Set the easing mode for the open and close animations. Check below all values possible
 
 Easing options:
 
@@ -224,3 +225,21 @@ Example:
             }
         });
     </script>
+
+## Tips and Tricks
+
+Check the following tips:
+
+*   Use small thumbnail to minimize the impact of getting the predominant color.
+*   Pay atention to the size of the div that wraps your images. The Chroma Gallery will follow the size of his parent.
+*   Use onLoad callback to call any method or for any extra code.
+*   Feel free to customize the font of the image description and/or the index when a image is opened.
+*   Don't worry if a image is broken, the Chroma Gallery will handle it
+*   Pay attention to stylesheets and fonts folders. The css must correctly reference the chroma-ui font location.
+
+You should not consider to use the Chroma Gallery when:
+
+*   Don't want to enlarge your image. If you want a grid layout, use masonry alone.
+*   If you have large image description. Chroma Gallery limits the description in 144 characters.
+*   If you need to seperate a page to your image.
+*   Your image size (MB) is too large.
